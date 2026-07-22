@@ -1,0 +1,16 @@
+{
+  "system": "JME",
+  "originType": "JmeDecree",
+  "description": "Indexes decree from the JME Process Archive Service.",
+  "documentationUrl": "https://bitbucket.bit.admin.ch/projects/BIT_JME/repos/jme-archive-type-registry/browse/archive-types/jme/decree/Decree.json",
+  "roles": [
+    "jme_read"
+  ],
+  "mappingVersions": [
+    {
+      "major": 1,
+      "minor": 0,
+      "mappingDefinition": "JmeDecree_mapping_v1_0.json"
+    }
+  ]
+}

@@ -1,0 +1,27 @@
+{
+  "system": "JME",
+  "originType": "JmeTransitDocument",
+  "description": "Indexes transit documents in the JME opensearch resource service.",
+  "documentationUrl": "https://confluence.bit.admin.ch/display/JME/TransitDocument",
+  "roles": [
+    "jme_read"
+  ],
+  "mappingVersions": [
+    {
+      "major": 1,
+      "minor": 0,
+      "mappingDefinition": "JmeTransitDocument_mapping_v1_0.json"
+    },
+    {
+      "major": 1,
+      "minor": 1,
+      "mappingDefinition": "JmeTransitDocument_mapping_v1_1.json"
+    },
+    {
+      "major": 1,
+      "minor": 2,
+      "mappingDefinition": "JmeTransitDocument_mapping_v1_2.json"
+    }
+  ]
+}
+

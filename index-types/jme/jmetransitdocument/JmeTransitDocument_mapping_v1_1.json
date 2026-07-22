@@ -1,0 +1,60 @@
+{
+  "mappings": {
+    "dynamic": false,
+    "properties": {
+      "search_item": {
+        "type": "object",
+        "properties": {
+          "upserted_at":   { "type": "date", "format": "strict_date_optional_time||epoch_millis" },
+          "major_version": { "type": "integer" },
+          "minor_version": { "type": "integer" }
+        }
+      },
+      "origin": {
+        "type": "object",
+        "properties": {
+          "id":       { "type": "keyword" },
+          "version":  { "type": "keyword" },
+          "bp_id":    { "type": "keyword" },
+          "tenant":   { "type": "keyword" },
+          "created":  { "type": "date", "format": "strict_date_optional_time||epoch_millis" },
+          "modified": { "type": "date", "format": "strict_date_optional_time||epoch_millis" },
+          "reference": {
+            "type": "object",
+            "enabled": false
+          }
+        }
+      },
+      "data": {
+        "type": "object",
+        "properties": {
+          "transit_document_id": {
+            "type": "keyword"
+          },
+          "movement_reference_number": {
+            "type": "keyword"
+          },
+          "declarant_id": {
+            "type": "keyword"
+          },
+          "departure_office": {
+            "type": "keyword"
+          },
+          "destination_office": {
+            "type": "keyword"
+          },
+          "goods_description": {
+            "type": "text"
+          },
+          "remarks": {
+            "type": "text"
+          },
+          "document_type": {
+            "type": "text"
+          }
+        }
+      }
+    }
+  }
+}
+

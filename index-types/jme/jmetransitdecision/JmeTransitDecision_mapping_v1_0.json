@@ -1,0 +1,54 @@
+{
+  "mappings": {
+    "dynamic": false,
+    "properties": {
+      "search_item": {
+        "type": "object",
+        "properties": {
+          "upserted_at":   { "type": "date", "format": "strict_date_optional_time||epoch_millis" },
+          "major_version": { "type": "integer" },
+          "minor_version": { "type": "integer" }
+        }
+      },
+      "origin": {
+        "type": "object",
+        "properties": {
+          "id":       { "type": "keyword" },
+          "version":  { "type": "keyword" },
+          "bp_id":    { "type": "keyword" },
+          "tenant":   { "type": "keyword" },
+          "created":  { "type": "date", "format": "strict_date_optional_time||epoch_millis" },
+          "modified": { "type": "date", "format": "strict_date_optional_time||epoch_millis" },
+          "reference": {
+            "type": "object",
+            "enabled": false
+          }
+        }
+      },
+      "data": {
+        "type": "object",
+        "properties": {
+          "transit_decision_id": {
+            "type": "keyword"
+          },
+          "status": {
+            "type": "keyword"
+          },
+          "remarks": {
+            "type": "text"
+          },
+          "decided_by": {
+            "type": "keyword"
+          },
+          "decision_date": {
+            "type": "date",
+            "format": "strict_date_optional_time||epoch_millis"
+          },
+          "transit_document_id": {
+            "type": "keyword"
+          }
+        }
+      }
+    }
+  }
+}

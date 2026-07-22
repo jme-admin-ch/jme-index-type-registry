@@ -1,0 +1,36 @@
+publiccodeYmlVersion: 0.4.0
+name: jme-index-type-registry
+applicationSuite: JME
+softwareVersion: 1.0.0
+releaseDate: 2026-07-22
+url: "https://github.com/jme-admin-ch/jme-index-type-registry.git"
+landingURL: "https://github.com/jme-admin-ch/jme"
+platforms:
+  - web
+categories:
+  - application-development
+developmentStatus: stable
+softwareType: library
+organisation:
+  uri: https://ld.admin.ch/office/V.1.7
+  name: Federal Office of Information Technology, Systems and Telecommunication
+description:
+  en:
+    localisedName: jme-index-type-registry
+    shortDescription: Index type registry containing JME OpenSearch index types produced or consumed by JME services.
+    longDescription: >
+      This index type registry contains definitions of JME OpenSearch index types produced or consumed by JME
+      services. This is used for example by the jeap-opensearch-index-writer-service.
+    features:
+      - OpenSearch index type definitions for JME services and libraries
+legal:
+  license: Apache-2.0
+maintenance:
+  type: internal
+  contacts:
+    - name: Federal Office of Information Technology, Systems and Telecommunication FOITT
+      email: jeap-community@bit.admin.ch
+localisation:
+  localisationReady: false
+  availableLanguages:
+    - en

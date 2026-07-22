@@ -1,0 +1,15 @@
+# IntelliJ
+*.iml
+.idea/*
+
+# Maven
+target/
+*/pom.xml.versionsBackup
+
+*.log
+/lsp/conf/xml.json
+
+settings.xml
+
+.project
+.settings/

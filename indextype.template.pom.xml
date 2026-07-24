@@ -8,6 +8,7 @@
     <version>${version}</version>
     <packaging>jar</packaging>
     <name>${project.groupId}:${project.artifactId}</name>
+    <description>OpenSearch index type artifact ${artifactId}, generated and published by the jme-index-type-registry.</description>
     <url>https://github.com/jme-admin-ch/jme-index-type-registry/tree/master</url>
 
     <scm>

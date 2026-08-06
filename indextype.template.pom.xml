@@ -9,10 +9,10 @@
     <packaging>jar</packaging>
     <name>${project.groupId}:${project.artifactId}</name>
     <description>OpenSearch index type artifact ${artifactId}, generated and published by the jme-index-type-registry.</description>
-    <url>https://github.com/jme-admin-ch/jme-index-type-registry/tree/master</url>
+    <url>https://github.com/jme-admin-ch/jme-index-type-registry/tree/main</url>
 
     <scm>
-        <url>https://github.com/jme-admin-ch/jme-index-type-registry/tree/master.git</url>
+        <url>https://github.com/jme-admin-ch/jme-index-type-registry.git</url>
         <connection>scm:git:git://github.com/jme-admin-ch/jme-index-type-registry.git</connection>
         <developerConnection>scm:git:ssh://github.com:jme-admin-ch/jme-index-type-registry.git</developerConnection>
     </scm>

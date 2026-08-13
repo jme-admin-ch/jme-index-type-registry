@@ -7,7 +7,7 @@
     <parent>
         <groupId>ch.admin.bit.jeap</groupId>
         <artifactId>jeap-spring-boot-parent</artifactId>
-        <version>38.6.1</version>
+        <version>39.0.0</version>
         <relativePath/>
     </parent>
 
@@ -45,7 +45,6 @@
         <maven.deploy.skip>true</maven.deploy.skip>
         <!-- Override with -Dindextype.git.url= to skip master branch comparison locally -->
         <indextype.git.url>https://github.com/jme-admin-ch/jme-index-type-registry</indextype.git.url>
-        <jeap-opensearch-index-type-registry-maven-plugin.version>3.0.0</jeap-opensearch-index-type-registry-maven-plugin.version>
     </properties>
 
     <build>

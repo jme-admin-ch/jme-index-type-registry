@@ -45,6 +45,8 @@
         <maven.deploy.skip>true</maven.deploy.skip>
         <!-- Override with -Dindextype.git.url= to skip master branch comparison locally -->
         <indextype.git.url>https://github.com/jme-admin-ch/jme-index-type-registry</indextype.git.url>
+        <!-- Generate the CycloneDX SBOM even though this POM is not deployed (maven.deploy.skip), as the Trivy scan requires it -->
+        <cyclonedx.skipNotDeployed>false</cyclonedx.skipNotDeployed>
     </properties>
 
     <build>

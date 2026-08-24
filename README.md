@@ -3,6 +3,17 @@
 This repository is the source of truth for the OpenSearch index types used by the JME examples. The build validates
 mapping compatibility and publishes a typed Maven artifact for every index type and major version.
 
+## Structure
+
+Index types live under `index-types/jme/<index-type>/`, each with a top-level `.json` descriptor and one
+`_mapping_v<major>_<minor>.json` OpenSearch mapping file per published version:
+
+- `jmedecree`, `jmedecreedocument`, `jmediagram` — single-version index types.
+- `jmetransitdocument` — versioned across `v1_0` to `v1_3`, showing minor-version mapping evolution.
+- `jmetransitdecision` — versioned across `v1_0` and `v2_0`, showing major-version mapping evolution.
+
+See `schema/README.md` for the descriptor/mapping file format.
+
 ## Build
 
 The build requires Java 25.

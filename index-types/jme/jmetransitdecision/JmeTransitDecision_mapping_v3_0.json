@@ -1,0 +1,92 @@
+{
+  "settings": {
+    "analysis": {
+      "analyzer": {
+        "transit_text_analyzer": {
+          "type": "custom",
+          "char_filter": ["ampersand_to_and"],
+          "tokenizer": "text_parts",
+          "filter": ["lowercase", "asciifolding", "transit_stopwords"]
+        }
+      },
+      "normalizer": {
+        "transit_keyword_normalizer": {
+          "type": "custom",
+          "filter": ["lowercase", "asciifolding"]
+        }
+      },
+      "tokenizer": {
+        "text_parts": {
+          "type": "pattern",
+          "pattern": "[\\s-]+"
+        }
+      },
+      "filter": {
+        "transit_stopwords": {
+          "type": "stop",
+          "stopwords": ["and"]
+        }
+      },
+      "char_filter": {
+        "ampersand_to_and": {
+          "type": "mapping",
+          "mappings": ["& => and"]
+        }
+      }
+    }
+  },
+  "mappings": {
+    "dynamic": false,
+    "properties": {
+      "search_item": {
+        "type": "object",
+        "properties": {
+          "upserted_at":   { "type": "date", "format": "strict_date_optional_time||epoch_millis" },
+          "major_version": { "type": "integer" },
+          "minor_version": { "type": "integer" }
+        }
+      },
+      "origin": {
+        "type": "object",
+        "properties": {
+          "id":       { "type": "keyword" },
+          "version":  { "type": "keyword" },
+          "bp_id":    { "type": "keyword" },
+          "tenant":   { "type": "keyword" },
+          "created":  { "type": "date", "format": "strict_date_optional_time||epoch_millis" },
+          "modified": { "type": "date", "format": "strict_date_optional_time||epoch_millis" },
+          "reference": {
+            "type": "object",
+            "enabled": false
+          }
+        }
+      },
+      "data": {
+        "type": "object",
+        "properties": {
+          "transit_decision_identifier": {
+            "type": "keyword"
+          },
+          "status": {
+            "type": "keyword"
+          },
+          "remarks": {
+            "type": "text",
+            "analyzer": "transit_text_analyzer"
+          },
+          "decided_by": {
+            "type": "keyword",
+            "normalizer": "transit_keyword_normalizer"
+          },
+          "decision_date": {
+            "type": "date",
+            "format": "strict_date_optional_time||epoch_millis"
+          },
+          "transit_document_id": {
+            "type": "keyword"
+          }
+        }
+      }
+    }
+  }
+}

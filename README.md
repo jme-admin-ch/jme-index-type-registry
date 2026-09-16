@@ -10,7 +10,7 @@ Index types live under `index-types/jme/<index-type>/`, each with a top-level `.
 
 - `jmedecree`, `jmedecreedocument`, `jmediagram` — single-version index types.
 - `jmetransitdocument` — versioned across `v1_0` to `v1_3`, showing minor-version mapping evolution.
-- `jmetransitdecision` — versioned across `v1_0` and `v2_0`, showing major-version mapping evolution.
+- `jmetransitdecision` — versioned across `v1_0`, `v2_0` and `v3_0`, showing major-version mapping evolution.
 
 See `schema/README.md` for the descriptor/mapping file format.
 

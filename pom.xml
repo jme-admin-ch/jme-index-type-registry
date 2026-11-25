@@ -113,7 +113,6 @@
                             <deployAllIndexTypes>false</deployAllIndexTypes>
                             <pomTemplateFile>${project.basedir}/indextype.template.pom.xml</pomTemplateFile>
                             <trunkBranchName>main</trunkBranchName>
-                            <trunkMavenProfile>maven-central-publish</trunkMavenProfile>
                         </configuration>
                     </execution>
                 </executions>
